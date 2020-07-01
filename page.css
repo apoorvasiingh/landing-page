@@ -1,0 +1,22 @@
+body{
+   
+    background-image: linear-gradient(to right, rgb(22, 140, 175) , rgb(13, 241, 211));
+}
+img{
+    
+position: absolute;
+width: 506px;
+height: 472px;
+left: 100px;
+top: 155px;
+}
+.container{
+    
+position: absolute;
+width: 773.5px;
+height: 562px;
+left: 200.5px;
+top: 50.5px;
+background: #fff;
+border-radius: 14px 14px 14px 14px;
+}

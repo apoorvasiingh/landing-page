@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="page.css">
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    
+    <title>Landing Page</title>
+</head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="uiweb.png">
+        </div>
+          <div class="col-sm-8">
+            <div class="container">
+                <h2>Form Validation</h2>
+               <form action="/action_page.php" class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col">
+                        <label for="uname">First Name</label>
+                      <input type="text" class="form-control" id="email" placeholder="First Name" name="First Name" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    
+                    </div>
+                    <div class="col">
+                        <label for="uname">Last Name</label>
+                      <input type="text" class="form-control" id="Enter email" placeholder="Last Name" name="Last Nmae" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        <label for="uname">Age:</label>
+                      <input type="number" class="form-control" id="age" placeholder="age" name="age" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    
+                    </div>
+                    <div class="col">
+                        <label for="uname">Mobile No.</label>
+                      <input type="number" class="form-control" id="Mobile no." placeholder="Mobile no." name="Mobile" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        <label for="uname">Username:</label>
+                      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    
+                    </div>
+                    <div class="col">
+                        <label for="uname">Password:</label>
+                      <input type="password" class="form-control" placeholder="Enter password" name="pswd" required>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                              Profile
+                              <div class="valid-feedback">Valid.</div>
+                              <div class="invalid-feedback">Check this checkbox to continue.</div>
+                            </label>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Choose File</button> Sample.pdf
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                              <label for="comment">Comment:</label>
+                              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                  </div>
+
+              
+              <script>
+              // Disable form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Get the forms we want to add validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              </script>
+              
+        </div>
+        </div>
+      </div>
+  </body>
+</html>     
